@@ -17,13 +17,13 @@ void CalculateFunc(){
     
     double 
         factorial = 1, 
-        step = 6, 
+        step = 2, 
         sum,
-        func1 = prev/((step)* factorial);
+        func1 = (prev * step ) / factorial;
 
-    step *= 6;
+    step *= 2;
 
-    double func2 = next / ((step) * factorial);
+    double func2 = (next * step ) / factorial;
 
     int fib = prev + next;
         const double eps = 0.000001;
@@ -34,7 +34,7 @@ void CalculateFunc(){
             step*=6;
             i++;
             factorial*=i;
-            f = fib/((step)*factorial);
+            f = (fib * step ) / factorial;
             sum+=f;
             prev = fib;
             fib += next;
